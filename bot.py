@@ -1,3 +1,8 @@
+import mimetypes
+import sys
+
+sys.modules['imghdr'] = mimetypes
+
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
